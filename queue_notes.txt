@@ -1,0 +1,6 @@
+FIFO property --> first in first out
+
+what is a circle array? (not a real thing thing)
+think of a pizza pie
+
+... 0 1 2 3 4 5 6 <-- --> 0 1 2 3 4 5 6 ...

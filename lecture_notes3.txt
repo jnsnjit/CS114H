@@ -1,0 +1,52 @@
+defining a language:
+
+a set of strings of symbols
+
+if the java program is one long string of characters, the program is defined as:
+java = {list of stringed symbols};
+
+I and D are non terminal symbols
+<I> => <D> | <D><I>                        // <I> = integer, <D> = digit, | is or symbol //
+<D> => 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9       or        0 | 1 | ... | 8 | 9
+
+"1234" \in L(G)         // goal is take non terminal symbols in something that is terminal "end" //
+<I> -> <D><I>
+    -> <D><D><I>
+    -> <D><D><D><I>
+    -> <D><D><D><D>
+    -> 1<D><D><D>
+    -> 12<D><D>
+    -> 123<D>
+    -> 1234      // terminal, can end
+
+<E> => <I> | <I> <O> <E> 
+<I> => <D> | <D><I>
+<D> =>  0 | 1 | ... | 8 | 9
+<O> => + | - | * | /
+
+"1 + 2" \in L(G)?
+
+<E> -> <I> <O> <E>
+    -> <I> <O> <I>
+    -> <D> <O> <I>
+    ->  1  <O> <I>
+    -> 1 + <I>
+    -> 1 + <D> 
+    -> 1 + 2 // terminal, can end
+
+"1+2".equals("1+2"); true
+
+"1+2*3" \in L(G)?
+"1+2*3".equal("1+2*3")
+
+<ID> => <LETTER> | <LETTER><SYMBOLS>
+<SYMBOLS> => <LETTER> | <DIGIT> | <LETTER><SYMBOLS> | <DIGIT><SYMBOLS>
+<LETTER> => a | b | ... | y | z
+<DIGITS> => 0 | 1 | ... | 8 | 9
+
+"first" \in L(G)?
+yes!
+"1st" \in L(G)?
+"no", no way to start an ID with a digit
+
+

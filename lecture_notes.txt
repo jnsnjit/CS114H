@@ -1,0 +1,15 @@
+recursion:
+repeat function until base condition is reached
+
+what is 'memoization'?
+basically, when using recursion, you can decrease
+the call stack by creating a cache of information 
+that you might know about how your recursive 
+function works
+
+lets say I know the first ten digits of the fibo seq,
+if i can make the func remember that, then that is ten
+function calls less.
+
+n! / (n-k)!
+4*3*2*1 / 2*1

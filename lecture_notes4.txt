@@ -1,0 +1,15 @@
+abstracting in java:
+
+whats the point? when we want to hide internal info from people using said class.
+
+stacks:
+how recursion works (put stuff into stack, then go do LIFO)
+
+goal --> create stack, add, and remove 
+atomic operation: indivisible
+non-atomic operation: divisible
+
+linked list:! (two parts)      
+            {d|n}->{d|n}->{d|null}
+             A      B      C    
+
