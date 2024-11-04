@@ -7,7 +7,7 @@ package Projects;
 import java.util.Iterator;
 import java.util.Random;
 
-public class Main{
+public class ListTester{
     public static void main(String[] args){
         Random rand = new Random(1);
         List<Integer> list = new SortedList<Integer>();
