@@ -4,7 +4,7 @@ import java.util.Random;
 
     public class SearchTester{
     public static void main(String[] args) {
-        int num = args.length == 1 ? Integer.parseInt(args[0]) : 10000;
+        int num = args.length == 1 ? Integer.parseInt(args[0]) : 10000000;
         Integer[] array = new Integer[num];
         Random rand;
         long start, stop;
